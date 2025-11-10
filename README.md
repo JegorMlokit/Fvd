@@ -40,7 +40,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina van Youtube
-  <img src="readme-images/yt-home" width="375px" alt="Homepagina van youtube">
+  <img src="readme-images/yt-home.jpg" width="375px" alt="Homepagina van youtube">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Een video pagina 
