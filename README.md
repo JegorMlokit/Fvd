@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Een video pagina 
-  <img src="readme-images/video-pagina" width="375px" alt="Een videopagina op youtube">
+  <img src="readme-images/video-pagina .png" width="375px" alt="Een videopagina op youtube">
  
 </details>
 
