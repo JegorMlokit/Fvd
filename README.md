@@ -56,7 +56,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Lijst met je bevindingen die in de test naar voren kwamen: Accessibility Grailed
+
+Met slechte motoriek werkt grailed opzicht wel goed, ik kan alles gebruiken wat ik moet, het gaat wat moeizaam maar dat komt vooral doordat ik het niet gewend ben. 
+
+Met de spasme simulator kan ik de website ook gebruiken zonder hindernissen die de website creëert .
+
+Screenreader test Grailed:
+De screenreader werkt goed op Grailed, hij legt bij alles goed uit wat het is en waar het voor bedoeld is, dus ik merk dat grailed een goede toegankelijkheid. 
+Bij vakjes laat hij horen of het aangekruist is of niet, dat is erg fijn. Bij een foto van een kledingstuk geeft het mooi aan wat je ziet en hoe het heet. Op de productpagina vertelt hey goed wat de maat is. En verteld goed wat er op de productpagina staat.
+
+Ik denk dat een minpuntje is dat het echt elk ding op de website afgaat en dat het misschien iets te veel is en overbodige informatie is voor als je een product wil bekijken. 
 
 </details>
 
