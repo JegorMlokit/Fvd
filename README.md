@@ -232,8 +232,10 @@ Ik weet voor het eindegesprek dat ik nog veel te weinig heb, om een voldoende te
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details
+  2. https://codepen.io/shooft/pen/QwjQGZe
+  3. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-decoration
+  4. https://www.youtube.com/watch?v=McPdzhLRzCg&t=167s
+     
 
 </details>
