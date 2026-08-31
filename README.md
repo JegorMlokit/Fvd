@@ -16,7 +16,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+ Jegor Mlokit
 
   #### Je startniveau:
  Blauw
@@ -36,14 +36,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Ik wil Youtube na gaan maken 
+  Het is de bedoeling dat ik 2 pagina's van Grailed ga proberen namaken.
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Homepagina van Youtube
+  Homepagina van Grailed
   <img src="readme-images/Grailed-home.PNG" width="375px" alt="Homepagina van Grailed">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Een video pagina 
+
   <img src="readme-images/product.PNG" width="375px" alt="Een productpagina van Grailed">
  
 </details>
