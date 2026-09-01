@@ -97,7 +97,7 @@ Ik denk dat een minpuntje is dat het echt elk ding op de website afgaat en dat h
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Ik was nog niet heel erg ver, ik had de breakdownschets gemaakt en ik had klein beetje informatie op me pagina, maar ik kwam hier vooral om antwoord te krijgen op de vragen die ik had.
+ 
 
 
   ### Agenda voor meeting
@@ -113,7 +113,7 @@ Ik denk dat een minpuntje is dat het echt elk ding op de website afgaat en dat h
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-het kwam erop neer dat ik meer de breakdownschets moest afmaken en gewoon meer moet toevoegen op mijn pagina.
+
 
 </details>
 
@@ -127,7 +127,7 @@ het kwam erop neer dat ik meer de breakdownschets moest afmaken en gewoon meer m
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
- Ik had meer informatie toegevoegd aan de pagina, maar nog niet aan de css gezeten.
+ 
 
 
   ### Agenda voor meeting
@@ -141,7 +141,7 @@ het kwam erop neer dat ik meer de breakdownschets moest afmaken en gewoon meer m
 
 
   ### Verslag van meeting
-  kwam erop neer dat ik meer moet toevoegen zodat ik daarna aan de css kan werken.
+
 
 </details>
 
@@ -200,7 +200,7 @@ het kwam erop neer dat ik meer de breakdownschets moest afmaken en gewoon meer m
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
-Ik weet voor het eindegesprek dat ik nog veel te weinig heb, om een voldoende te krijgen, maar ik kom hier om feedback en hulp te krijgen zodat ik het voor de herkansing wel allemaal gereed heb.
+
   
 
   ### Je uitkomst - karakteristiek screenshots:
