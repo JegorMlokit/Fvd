@@ -1,2 +1,2 @@
-// JavaScript Document
-console.log("hi");
+document.querySelector(".links").style.animationPlayState = "running";
+
