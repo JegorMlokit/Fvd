@@ -157,6 +157,18 @@ Ik denk dat een minpuntje is dat het echt elk ding op de website afgaat en dat h
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+
+
+
+
+
+  Screenreader test Grailed:
+De screenreader werkt maar niet perfect, hij legt wel goed uit dat je op de nav staat en geeft aan wat er in de nav is zelfde geldt voor hamburger menu. als ik iets uitklap waar informatie staat geeft hij aan dat het open is. 
+
+een minpuntje is dat hij de alt niet van de img voorleest, ik heb wel overal een alt tekst neergezet dus ik snap niet waarom die dat niet doet.
+
+dus hij heelst wel voor wat de headings zijn en waar je op dat moment staat maar de alts van foto's lees hij niet voor.
+
 </details>
 
 
@@ -205,6 +217,87 @@ Ik denk dat een minpuntje is dat het echt elk ding op de website afgaat en dat h
 
   ### Je uitkomst - karakteristiek screenshots:
 
+Fed notities +
+
+
+- [x] Ik weet dat ik nog js moet toevoegen
+
+- [x] Hamburger micro interactie
+
+- [x] Like survace
+5 in totaal
+
+
+
+- [x] Ik snap niet waarom mijn dubbele carousel niet meer werkt. 
+Grid temp collums ipv auto
+Staan onder elkaar
+Grid area 1/1 weghalen
+
+
+
+
+- [x] Ik heb nog wel een paar divs is dat erg? Ik heb al veel veranderd naar articles en spans 
+
+Maak hier een ul van
+
+- [x] Recent dollar teken p
+- [x] H4 naam
+
+- [x] H2 ipv h1 editorial
+
+
+
+
+
+- [x] De animatie aan boven aan moet de teletijd komen en niet zo weggaan en terugkomen zelfde geldt voor de kleur 
+
+- [x] Paar keer die zin copy paste
+
+
+- [x] Sommige sections zijn te dicht op elkaar alleen snap ik niet hoe ik ze verder van elkaar af moet zetten 
+
+- [x] Margins toevoegen
+
+
+- [x] Hamburger menu toevoegen via de opdracht 
+
+
+
+- [x] Blokje met naam en verkoper krijg ik niet goed hetzelfde geldt voor sell one like this 
+
+- [x] Grid maken en div om naast elkaar te zette
+Div alleen voor vormgeving
+
+
+
+- [x] En related searches moet ik doen 
+Carousel flexbox en flexwrap
+Styling arefs style als button
+
+
+- [x] Font a weghalen iconen
+
+Of als svg of als plaatjes
+Misschien gwn van grailed
+Img tage of svg gwn erin zette
+Svg alleen handig als ik ga animeren
+
+
+- [ ] Sticky
+Pos fixed
+Bachground
+
+Section margin top
+
+- [ ] Header nav footer nav
+- [ ] Header omheen
+
+- [ ] Units em gebruiken
+Geen px
+
+
+- [ ] Usability opdracht 
 
 
   ### Dit ging goed/Heb ik geleerd: 
