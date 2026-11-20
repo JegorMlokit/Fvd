@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="jouw naam">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Grailed</title>
 
@@ -17,28 +16,69 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
     >
-
-    <link rel="stylesheet" href="https://use.typekit.net/zbe4pkx.css">
 </head>
 
 <body>
+    
+    <header>
+        <nav class="nav">
+            <ul>
+                <li>
+                    <button class="open" aria-label="Menu openen">
+                        <img src="images/burger.png" alt="hamburger menu">
+                    </button>
+                </li>
 
-    <nav class="nav">
-        <ul>
-            <li><a href=""><i class="fa-solid fa-bars"></i></a></li>
-            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-            <li><a href=""><img src="images/logo-ezgif.com-video-to-gif-converter.gif" alt=""></a></li>
-            <li><a href=""><i class="fa fa-comment" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
-            <li><a href=""><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
-        </ul>
-    </nav>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" fill="currentColor">
+                        <path d="M416 208c0 45.9-14.9 88.3-40 122.7l119.7 119.6c21.1 21.1 21.1 55.3 0 76.4s-55.3 21.1-76.4 0L299.7 407C265.3 432.1 222 448 176 448 78.8 448 0 369.2 0 272S78.8 96 176 96s240 78.8 240 176zm-240 160a96 96 0 1 0 0-192 96 96 0 1 0 0 192z"/>
+                    </svg>
+                </li>
+
+                <li class="logo">
+                    <h1>
+                        <img src="images/logo-ezgif.com-video-to-gif-converter.gif" alt="Grailed">
+                    </h1>
+                </li>
+                <li>
+                    <img src="images/comment.png" alt="comments">
+                </li>
+
+                <li>
+                    <img src="images/free-heart-icon-3510-thumb.png" alt=" je likes">
+                </li>
+
+                <li>
+                    <img src="images/iconentje.webp" alt="persoonlijk account">
+                </li>
+            </ul>
+        </nav>
+
+        <!-- het uitschuifmenu -->
+        <nav class="menu">
+            <button class="sluit" aria-label="Menu sluiten">✕</button>
+
+            <ul>
+                <li><a href="#">Designers</a></li>
+                <li><a href="#">Menswear</a></li>
+                <li><a href="#">Womenswear</a></li>
+                <li><a href="#">Vintage</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Staff Picks</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Editorial</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <p class="links">
         LOWER FEES ON SALES UNDER $120
         <span class="streep">Sell Now</span>
+        LOWER FEES ON SALES UNDER $120
+        <span class="streep">Sell Now</span>
+        LOWER FEES ON SALES UNDER $120
+        <span class="streep">Sell Now</span>
     </p>
-
 
     <section class="carousel">
         <ul>
@@ -64,313 +104,288 @@
         </ul>
     </section>
 
-
     <div class="zien">
         <h4>Daily Picks For You</h4>
-        <a href="">SEE MORE<i class="fa-solid fa-arrow-right-long"></i></a>
+
+        <a href="">
+            SEE MORE
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16" height="16" fill="currentColor">
+                <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.7 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7l-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+            </svg>
+        </a>
     </div>
 
+    <ul class="car-day">
 
-    <div class="car-day">
-
-        <div class="art-day">
-            <img src="images/daily-1.jpeg" alt="Foto met Nike schoenen">
+        <li class="art-day">
+            <img src="images/daily-1.jpeg" alt="Maison Margiela riem wit">
             <h3>MARGIELA</h3>
             <p>maison margiela chrome belt</p>
-        </div>
+        </li>
 
-        <div class="art-day">
-            <img src="images/daily-2.jpeg" alt="Foto van de Creative director van comme des garcon">
+        <li class="art-day">
+            <img src="images/daily-2.jpeg" alt="Zwarte Comme Des Garcon sneakers">
             <h3>comme des garcon</h3>
             <p>Cdg x Nike Af1 Mid</p>
-        </div>
+        </li>
 
-        <div class="art-day">
-            <img src="images/daily-3.jpeg" alt="Foto van schoenen van de samenwerking met comme des garcon en converse">
+        <li class="art-day">
+            <img src="images/daily-3.jpeg" alt="Adidas x Rick Owens sneakers">
             <h3>ADIDAS X RICK OWENS</h3>
             <p>Rick Owens Runner</p>
-        </div>
+        </li>
 
-        <div class="art-day">
-            <img src="images/daliy-4.jpeg" alt="Foto van normale witte sneakers">
+        <li class="art-day">
+            <img src="images/daliy-4.jpeg" alt="Asics x JJJJound sneakers">
             <h3>ASICS x JJJJOUND</h3>
             <p>Gel Kayano 14</p>
-        </div>
+        </li>
 
-        <div class="art-day">
-            <img src="images/daily-5.jpeg" alt="Foto van normale witte sneakers">
+        <li class="art-day">
+            <img src="images/daily-5.jpeg" alt="Number Nine t-shirt">
             <h3>NUMBER (N)INE</h3>
             <p>rare number (n)ine shield</p>
-        </div>
+        </li>
 
-        <div class="art-day">
-            <img src="images/daily-6.jpeg" alt="Foto van normale witte sneakers">
+        <li class="art-day">
+            <img src="images/daily-6.jpeg" alt="Asics x Kith sneakers">
             <h3>ASICS x KITH</h3>
             <p>ASICS Gel-Kayano 5</p>
-        </div>
+        </li>
 
-        <div class="art-day">
-            <img src="images/daily-7.jpeg" alt="Foto van normale witte sneakers">
+        <li class="art-day">
+            <img src="images/daily-7.jpeg" alt="Supreme t-shirt">
             <h3>SUPREME</h3>
             <p>Children of Bodom shirt</p>
-        </div>
+        </li>
 
-        <div class="art-day">
-            <img src="images/daily-8.jpeg" alt="Foto van normale witte sneakers">
+        <li class="art-day">
+            <img src="images/daily-8.jpeg" alt="Supreme Iron Maiden t-shirt">
             <h3>SUPREME</h3>
             <p>Iron Maiden Shirt Medium</p>
-        </div>
+        </li>
 
-        <div class="art-day">
-            <img src="images/daily-9.jpeg" alt="Foto van normale witte sneakers">
+        <li class="art-day">
+            <img src="images/daily-9.jpeg" alt="Comme des garcon portomonee">
             <h3>COMME DES GARCON</h3>
             <p>Comme des Garcon Ruby</p>
-        </div>
+        </li>
 
-        <div class="art-day">
-            <img src="images/daily-10.jpeg" alt="Foto van normale witte sneakers">
+        <li class="art-day">
+            <img src="images/daily-10.jpeg" alt="Maison margiela MM6">
             <h3>MAISON MARGIELA</h3>
             <p>MM6 Maison Margiela</p>
-        </div>
+        </li>
 
-        <div class="art-day">
-            <img src="images/daily-11.jpeg" alt="Foto van normale witte sneakers">
+        <li class="art-day">
+            <img src="images/daily-11.jpeg" alt="Rick Owens ring">
             <h3>RICK OWENS</h3>
             <p>Rick Owens Silver Double Ring</p>
-        </div>
+        </li>
 
-        <div class="art-day">
-            <img src="images/daily-12.jpeg" alt="Foto van normale witte sneakers">
+        <li class="art-day">
+            <img src="images/daily-12.jpeg" alt="Rick Owens tote bag">
             <h3>RICK OWENS</h3>
             <p>Rick Owens Tote Bag</p>
-        </div>
+        </li>
 
-    </div>
-
+    </ul>
 
     <section class="recent">
         <ul>
             <li>
-                <img src="images/97248b762d1846168f70e3e6d7ec1a19.jpeg" alt="">
-                <article>
-                    <p>Gosha x Fila T shirt</p>
-                    <span>$100</span>
-                </article>
+                <img src="images/97248b762d1846168f70e3e6d7ec1a19.jpeg" alt="Gosha x Fila t-shirt">
+                <h4>Gosha x Fila T shirt</h4>
+                <p>$100</p>
             </li>
 
             <li>
-                <img src="images/5536674954d34a60af7fb287618cf963.jpeg" alt="">
-                <article>
-                    <p>1/1 Sonic Youth Kentucky Boy Tyler Bootleg</p>
-                    <span>$85</span>
-                </article>
+                <img src="images/5536674954d34a60af7fb287618cf963.jpeg" alt="Sonic Youth Kentucky boy tyler t-shirt">
+                <h4>1/1 Sonic Youth Kentucky Boy Tyler Bootleg</h4>
+                <p>$85</p>
             </li>
 
             <li>
-                <img src="images/83190a81a43a49709b102d57c4f85307.jpeg" alt="">
-                <article>
-                    <p>Fear of God 1/4 zip tee</p>
-                    <span>$200</span>
-                </article>
+                <img src="images/83190a81a43a49709b102d57c4f85307.jpeg" alt="Fear of God 1/4 zip t-shirt">
+                <h4>Fear of God 1/4 zip tee</h4>
+                <p>$200</p>
             </li>
 
             <li>
-                <img src="images/921508b20eae4008aed063782ce57e9f.jpeg" alt="">
-                <article>
-                    <p>Gucci NY Yankees silk bomber</p>
-                    <span>$1750</span>
-                </article>
+                <img src="images/921508b20eae4008aed063782ce57e9f.jpeg" alt="NY Yankees silk bomber">
+                <h4>Gucci NY Yankees silk bomber</h4>
+                <p>$1750</p>
             </li>
 
             <li>
-                <img src="images/af47835e3f074560a490fcae48925d60.jpeg" alt="">
-                <article>
-                    <p>Gosha track jacket</p>
-                    <span>$150</span>
-                </article>
+                <img src="images/af47835e3f074560a490fcae48925d60.jpeg" alt="Gosha trach jacket">
+                <h4>Gosha track jacket</h4>
+                <p>$150</p>
             </li>
         </ul>
     </section>
 
-
     <section class="stukje">
-        <img src="images/Military_-_Merch-Module-Desktop.jpg" alt="">
+        <img src="images/Military_-_Merch-Module-Desktop.jpg" alt="achtergrond van the original menswear archive">
 
         <article>
             <p>Editorial</p>
-            <h1>The Original Menswear Archive</h1>
+            <h2>The Original Menswear Archive</h2>
             <p>
                 Our new guide traces how military garments like the M-65, the fishtail and the filght jacket became the backbone of modern menswear, with countless contemporary designers reinterpreting these iconic pieces, from Raf Simons to junya Watanabe.
             </p>
         </article>
     </section>
 
-
     <section>
         <p>From Grailed</p>
         <h4>Boot Camp</h4>
 
-        <div class="bootcamp">
+        <ul class="bootcamp">
+            <li class="boot-1">
+                <img src="images/bootcamp-1.jpeg" alt="foto van asic sneaker">
+            </li>
 
-            <div class="boot-1">
-                <img src="images/bootcamp-1.jpeg" alt="">
-            </div>
+            <li class="boot-2">
+                <img src="images/bootcamp-2.jpeg" alt="foto van een boot">
+            </li>
 
-            <div class="boot-2">
-                <img src="images/bootcamp-2.jpeg" alt="">
-            </div>
+            <li class="boot-3">
+                <img src="images/bootcamp-3.jpeg" alt="foto van een boot">
+            </li>
 
-            <div class="boot-3">
-                <img src="images/bootcamp-3.jpeg" alt="">
-            </div>
+            <li class="boot-4">
+                <img src="images/bootcamp-4.jpeg" alt="foto van asic sneaker">
+            </li>
 
-            <div class="boot-4">
-                <img src="images/bootcamp-4.jpeg" alt="">
-            </div>
-
-            <div class="boot-5">
-                <img src="images/bootcamp-5.jpeg" alt="">
-            </div>
-
-        </div>
+            <li class="boot-5">
+                <img src="images/bootcamp-5.jpeg" alt="foto van jeremy scott x adidas sneaker">
+            </li>
+        </ul>
     </section>
 
-
     <section class="stukje">
-        <img src="images/PFWOct2026-Merch-Module-ios.jpg" alt="">
+        <img src="images/PFWOct2026-Merch-Module-ios.jpg" alt="achtergrond foto van seen at paris fashion week">
 
         <article>
             <p>Street Style</p>
-            <h1>Seen at Paris Fashion Week</h1>
+            <h2>Seen at Paris Fashion Week</h2>
             <p>A closer look at the personal style that defined the week, plus curated edits to shop the looks.</p>
         </article>
     </section>
-
 
     <section>
         <p>RICK OWENS, RICK OWENS DRKSHDW, BALENCIAGA</p>
         <h3>Dark Luxury</h3>
 
-        <div class="bootcamp">
+        <ul class="bootcamp">
+            <li class="boot-1">
+                <img src="images/dark-1.jpeg" alt="foto van een hoodie">
+            </li>
 
-            <div class="boot-1">
-                <img src="images/dark-1.jpeg" alt="">
-            </div>
+            <li class="boot-2">
+                <img src="images/dark-2.jpeg" alt="foto van een sweater">
+            </li>
 
-            <div class="boot-2">
-                <img src="images/dark-2.jpeg" alt="">
-            </div>
+            <li class="boot-3">
+                <img src="images/dark-3.jpeg" alt="foto van een broek met riem">
+            </li>
 
-            <div class="boot-3">
-                <img src="images/dark-3.jpeg" alt="">
-            </div>
+            <li class="boot-4">
+                <img src="images/dark-4.jpeg" alt="foto van een broek en t-shirt">
+            </li>
 
-            <div class="boot-4">
-                <img src="images/dark-4.jpeg" alt="">
-            </div>
-
-            <div class="boot-5">
-                <img src="images/dark-5.jpeg" alt="">
-            </div>
-
-        </div>
+            <li class="boot-5">
+                <img src="images/dark-5.jpeg" alt="foto van een broek op de grond">
+            </li>
+        </ul>
     </section>
 
-
     <section class="stukje">
-        <img src="images/d6623814-471e-4ebe-8762-42ffd7f70231.jpg" alt="">
+        <img src="images/d6623814-471e-4ebe-8762-42ffd7f70231.jpg" alt="achtergrond van good vintage staples under $100">
 
         <article>
             <p>Closet Staples</p>
-            <h1>Good Vintage under $100</h1>
+            <h2>Good Vintage under $100</h2>
             <p>Shop our favorite vintage pieces under $100 including '70s-'90s tees, sweatshirts, work jackets and more.</p>
         </article>
     </section>
 
-
     <p>VINTAGE, JAPANESE BRAND, BODY GLOVE + MORE</p>
     <h3>Vintage Streetwear</h3>
 
-    <div class="bootcamp">
+    <ul class="bootcamp">
+        <li class="boot-1">
+            <img src="images/vintage-1.jpeg" alt="foto horloge met gele face">
+        </li>
 
-        <div class="boot-1">
-            <img src="images/vintage-1.jpeg" alt="">
-        </div>
+        <li class="boot-2">
+            <img src="images/vintage-2.jpeg" alt="foto van shirt met als achtergrond nep gras">
+        </li>
 
-        <div class="boot-2">
-            <img src="images/vintage-2.jpeg" alt="">
-        </div>
+        <li class="boot-3">
+            <img src="images/vintage-3.jpeg" alt="foto van een crewneck">
+        </li>
 
-        <div class="boot-3">
-            <img src="images/vintage-3.jpeg" alt="">
-        </div>
+        <li class="boot-4">
+            <img src="images/vintage-4.jpeg" alt="foto van een track jacket">
+        </li>
 
-        <div class="boot-4">
-            <img src="images/vintage-4.jpeg" alt="">
-        </div>
-
-        <div class="boot-5">
-            <img src="images/vintage-5.jpeg" alt="">
-        </div>
-
-    </div>
-
+        <li class="boot-5">
+            <img src="images/vintage-5.jpeg" alt="deftones t-shirt">
+        </li>
+    </ul>
 
     <p>From Grailed</p>
     <h4>New With Tags Luxury Under $300</h4>
 
-    <div class="bootcamp">
+    <ul class="bootcamp">
+        <li class="boot-1">
+            <img src="images/new-1.jpeg" alt="Foto van een blouse met frankenstein">
+        </li>
 
-        <div class="boot-1">
-            <img src="images/new-1.jpeg" alt="">
-        </div>
+        <li class="boot-2">
+            <img src="images/new-2.jpeg" alt="zilvere zonnebril">
+        </li>
 
-        <div class="boot-2">
-            <img src="images/new-2.jpeg" alt="">
-        </div>
+        <li class="boot-3">
+            <img src="images/new-3.jpeg" alt="foto van een paar sokken">
+        </li>
 
-        <div class="boot-3">
-            <img src="images/new-3.jpeg" alt="">
-        </div>
+        <li class="boot-4">
+            <img src="images/new-4.jpeg" alt="broek met print">
+        </li>
 
-        <div class="boot-4">
-            <img src="images/new-4.jpeg" alt="">
-        </div>
-
-        <div class="boot-5">
-            <img src="images/new-5.jpeg" alt="">
-        </div>
-
-    </div>
-
+        <li class="boot-5">
+            <img src="images/new-5.jpeg" alt="denim blouse">
+        </li>
+    </ul>
 
     <section>
         <h2>Shop Menswear</h2>
 
         <ul class="grid">
-            <li><img src="images/mens-1.jpeg" alt=""></li>
-            <li><img src="images/mens-2.jpeg" alt=""></li>
-            <li><img src="images/mens-3.jpeg" alt=""></li>
-            <li><img src="images/mens-4.jpeg" alt=""></li>
-            <li><img src="images/mens-5.jpeg" alt=""></li>
-            <li><img src="images/mens-6.jpeg" alt=""></li>
+            <li><img src="images/mens-1.jpeg" alt="shirts"></li>
+            <li><img src="images/mens-2.jpeg" alt="broeken"></li>
+            <li><img src="images/mens-3.jpeg" alt="jassen"></li>
+            <li><img src="images/mens-4.jpeg" alt="schoenen"></li>
+            <li><img src="images/mens-5.jpeg" alt="pakken"></li>
+            <li><img src="images/mens-6.jpeg" alt="accesoires"></li>
         </ul>
     </section>
-
 
     <section>
         <h2>Shop Womenswear</h2>
 
         <ul class="grid">
-            <li><img src="images/woman-1.jpeg" alt=""></li>
-            <li><img src="images/woman-2.jpeg" alt=""></li>
-            <li><img src="images/woman-3.jpeg" alt=""></li>
-            <li><img src="images/woman-4.jpeg" alt=""></li>
-            <li><img src="images/woman-5.jpeg" alt=""></li>
-            <li><img src="images/woman-6.jpeg" alt=""></li>
+            <li><img src="images/woman-1.jpeg" alt="shirts"></li>
+            <li><img src="images/woman-2.jpeg" alt="broeken"></li>
+            <li><img src="images/woman-3.jpeg" alt="jassen"></li>
+            <li><img src="images/woman-4.jpeg" alt="schoenen"></li>
+            <li><img src="images/woman-5.jpeg" alt="tassen"></li>
+            <li><img src="images/woman-6.jpeg" alt="accesoires"></li>
         </ul>
     </section>
-
 
     <footer>
         <nav>
@@ -383,18 +398,15 @@
         </nav>
 
         <ul class="iconen">
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-youtube"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><img src="images/Instagram.png" alt="instagram icoon"></li>
+            <li><img src="images/facebook.png" alt="facebook icoon"></li>
+            <li><img src="images/yt.webp" alt="youtube icoon"></li>
+            <li><img src="images/linked.png" alt="linkedin icoon"></li>
             <li>Grailed 2025</li>
         </ul>
     </footer>
 
-
     <script defer src="scripts/script.js"></script>
 
 </body>
-
 </html>
-
