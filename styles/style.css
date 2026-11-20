@@ -1,3 +1,4 @@
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -23,7 +24,7 @@ ul {
 :root {
     /* startje */
     --color-text: #111;
-    --color-background: #white;
+    --color-background: white;
 }
 
 
@@ -31,27 +32,116 @@ ul {
 /* JOUW STYLING */
 /****************/
 
-html {
-    font-family: 'helvetica', sans-serif;
-}
 
+/* ---------- DE BOVENSTE BALK ---------- */
 
-/* NAVIGATIE */
-
-nav {
-    background-color: var(--color-background);
+.nav {
+    background-color: var(--color-background, white);
     text-align: center;
     padding: 0.4em;
     width: 100%;
+    box-sizing: border-box;
 }
 
-nav ul {
+.nav ul {
     display: flex;
     align-items: center;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.nav img,
+.nav svg {
+    width: 24px;
+    height: 24px;
+}
+
+.nav .logo {
+    flex: 1;
+    text-align: center;
+}
+
+.nav .logo img {
+    width: auto;
+    height: 20px;
+}
+
+.nav button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 
-/* ALGEMENE ELEMENTEN */
+/* ---------- HET UITSCHUIFMENU ---------- */
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 200;
+    padding: 1em;
+    overflow-y: auto;
+
+    translate: -100% 0;
+    transition: translate 0.3s;
+}
+
+.menu.toonMenu {
+    translate: 0 0;
+}
+
+/* het ronde kruisje */
+
+.menu .sluit {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #e0e0e0;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* de lijst */
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+}
+
+/* de links met pijltje rechts */
+
+.menu li {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.menu a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.menu a::after {
+    content: "›";
+    font-weight: normal;
+}
+
+
+/* ---------- ALGEMENE ELEMENTEN ---------- */
 
 img {
     width: 100%;
@@ -82,7 +172,7 @@ button {
 }
 
 
-/* SLIDER */
+/* ---------- SLIDER ---------- */
 
 .slider-wrapper {
     position: relative;
@@ -107,7 +197,7 @@ button {
 }
 
 
-/* SCROLL CAROUSEL */
+/* ---------- SCROLL CAROUSEL ---------- */
 
 .scroll-car {
     display: grid;
@@ -123,7 +213,7 @@ button {
 }
 
 
-/* CAR ART */
+/* ---------- CAR ART ---------- */
 
 .car-art {
     display: flex;
@@ -138,18 +228,19 @@ button {
 }
 
 
-/* DONKERE KNOP */
+/* ---------- DONKERE KNOP ---------- */
 
 .donker {
     color: white;
-    background-color: #111;
+    background-color: black;
     padding: 10px;
     width: 90px;
     align-items: center;
+    font-family: Helvetica, sans-serif;
 }
 
 
-/* GRID */
+/* ---------- GRID ---------- */
 
 .grid {
     display: grid;
@@ -158,16 +249,16 @@ button {
 }
 
 
-/* RELATED */
+/* ---------- RELATED ---------- */
 
 .related {
     display: grid;
     grid-template-columns: minmax(220px, 1fr);
-    display: blocks;
+   
 }
 
 
-/* DAILY */
+/* ---------- DAILY ---------- */
 
 .daily {
     display: flex;
@@ -177,7 +268,7 @@ button {
 }
 
 
-/* CAR DAY */
+/* ---------- CAR DAY ---------- */
 
 .car-day {
     display: flex;
@@ -192,7 +283,7 @@ button {
 }
 
 
-/* BOOTCAMP */
+/* ---------- BOOTCAMP ---------- */
 
 .bootcamp {
     display: grid;
@@ -232,7 +323,7 @@ button {
 }
 
 
-/* TRENDING */
+/* ---------- TRENDING ---------- */
 
 .trending {
     background-image: url("trend.jpeg");
@@ -243,7 +334,7 @@ button {
 }
 
 
-/* FOOTER */
+/* ---------- FOOTER ---------- */
 
 .iconen {
     display: flex;
@@ -266,12 +357,13 @@ button {
 }
 
 
-/* TEKST EN LINKS */
+/* ---------- TEKST EN LINKS ---------- */
 
 .zien {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: Helvetica, sans-serif;
 }
 
 div a {
@@ -280,12 +372,12 @@ div a {
 }
 
 
-/* ROLLENDE TEKST */
+/* ---------- ROLLENDE TEKST ---------- */
 
 .links {
     white-space: nowrap;
     animation: scroll 15s linear infinite;
-    background-color: #EAF6F3;
+    background-color: #E4F3F0;
     color: #008565;
 }
 
@@ -300,7 +392,7 @@ div a {
 }
 
 
-/* CAROUSEL */
+/* ---------- CAROUSEL ---------- */
 
 .carousel ul {
     display: flex;
@@ -319,7 +411,7 @@ div a {
 }
 
 
-/* CAROUSEL BASIS */
+/* ---------- CAROUSEL BASIS ---------- */
 
 @layer basis {
     *, *::after, *::before {
@@ -338,10 +430,6 @@ div a {
 
     li {
         display: grid;
-    }
-
-    img {
-        grid-area: 1/1;
     }
 
     .carsousel h2 {
@@ -364,7 +452,7 @@ div a {
 }
 
 
-/* RECENT */
+/* ---------- RECENT ---------- */
 
 .recent li {
     width: 343px;
@@ -390,10 +478,11 @@ div a {
 }
 
 
-/* STUKJE / EDITORIAL */
+/* ---------- STUKJE / EDITORIAL ---------- */
 
 .stukje {
     position: relative;
+    margin-top: 1em;
 }
 
 .stukje img {
@@ -426,7 +515,7 @@ div a {
 }
 
 
-/* ONE */
+/* ---------- ONE ---------- */
 
 .one li {
     width: 343px;
@@ -454,7 +543,7 @@ div a {
 }
 
 
-/* REPORT BUTTON */
+/* ---------- REPORT BUTTON ---------- */
 
 .report {
     background: transparent;
@@ -462,11 +551,11 @@ div a {
     font-family: 'video', monospace;
     font-size: small;
     margin: 14px 0px 0px 10px;
-    padding: 6x 12px;
+    padding: 6px 12px;
 }
 
 
-/* BUTTONS */
+/* ---------- BUTTONS ---------- */
 
 .buttons {
     display: flex;
@@ -475,7 +564,7 @@ div a {
 }
 
 
-/* DUBBEL */
+/* ---------- DUBBEL ---------- */
 
 .dubbel {
     display: grid;
@@ -489,3 +578,149 @@ div a {
     width: 150px;
     height: 150px;
 }
+
+
+/* ---------- RELATED ---------- */
+
+.related {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 14px;
+    height: 165px;
+    overflow-x: auto;
+    list-style: none;
+    padding: 0;
+}
+
+.related li {
+    flex: none;
+}
+
+.related a {
+    display: block;
+    border: 2px solid #ddd;
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+    font-family: 'video', monospace;
+    font-size: 1em;
+}
+
+
+/* ---------- VERKOPER ---------- */
+
+.verkoper {
+    display: grid;
+    grid-template-columns: 60px 1fr;   /* avatar | rest */
+    gap: 1.5rem;
+    align-items: start;
+    margin: 1em;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.info p {
+    margin: 0.5rem 0;
+}
+
+
+/* alles in een .rij komt naast elkaar */
+
+.rij {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+
+/* ---------- ACTIE ---------- */
+
+#actie {
+    opacity: 0;
+    transition: 0.5s;
+    display: block;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.show {
+    opacity: 1 !important;
+}
+
+
+/* ---------- BUTTON PRODUCT ---------- */
+
+.button-product button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-product svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: black;
+    stroke-width: 1.5;
+}
+
+
+/* ---------- BOOKMARK ---------- */
+
+.bookmarked svg {
+    fill: #FACC15;
+}
+
+
+/* ---------- HARTJE ---------- */
+
+.liked svg {
+    fill: #ff78ae
+    ;
+}
+
+
+/* ---------- REVIEWS ---------- */
+
+#reviews svg {
+    width: 18px;
+    height: 18px;
+    fill: black;
+    cursor: pointer;
+}
+
+#reviews .spin {
+    animation: draaien 0.6s ease;
+}
+
+@keyframes draaien {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ---------- QUICK RESPONDER ---------- */
+
+.quick svg {
+    width: 16px;
+    height: 16px;
+    fill: black;
+    transition: 0.3s;
+}
+
+.quick .active {
+    fill: blue;
+    transform: scale(1.5);
+}
+
