@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -21,17 +20,59 @@
 
 <body>
 
-    <nav>
-        <ul>
-            <li><a href=""><i class="fa-solid fa-bars"></i></a></li>
-            <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
-            <li><a href=""><img src="images/logo-ezgif.com-video-to-gif-converter.gif" alt=""></a></li>
-            <li><a href=""><i class="fa fa-comment" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
-            <li><a href=""><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="nav">
+			<ul>
+                <li>
+                    <button class="open" aria-label="Menu openen">
+                        <img src="images/burger.png" alt="hamburger menu">
+                    </button>
+                </li>
 
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" fill="currentColor">
+                        <path d="M416 208c0 45.9-14.9 88.3-40 122.7l119.7 119.6c21.1 21.1 21.1 55.3 0 76.4s-55.3 21.1-76.4 0L299.7 407C265.3 432.1 222 448 176 448 78.8 448 0 369.2 0 272S78.8 96 176 96s240 78.8 240 176zm-240 160a96 96 0 1 0 0-192 96 96 0 1 0 0 192z"/>
+                    </svg>
+                </li>
+
+                <li class="logo">
+                    <h1>
+                        <img src="images/logo-ezgif.com-video-to-gif-converter.gif" alt="Grailed">
+                    </h1>
+                </li>
+                <li>
+                    <img src="images/comment.png" alt="comments">
+                </li>
+
+                <li>
+                    <img src="images/free-heart-icon-3510-thumb.png" alt=" je likes">
+                </li>
+
+                <li>
+                    <img src="images/iconentje.webp" alt="persoonlijk account">
+                </li>
+            </ul>
+        </nav>
+
+        <!-- het uitschuifmenu -->
+        <nav class="menu">
+            <button class="sluit" aria-label="Menu sluiten">✕</button>
+
+            <ul>
+                <li><a href="#">Designers</a></li>
+                <li><a href="#">Menswear</a></li>
+                <li><a href="#">Womenswear</a></li>
+                <li><a href="#">Vintage</a></li>
+                <li><a href="#">Sneakers</a></li>
+                <li><a href="#">Staff Picks</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Editorial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- PRODUCT AFBEELDINGEN -->
 
     <section class="carousel">
         <ul>
@@ -54,10 +95,14 @@
     </section>
 
 
+    <!-- PRODUCT INFORMATIE -->
+
     <section>
         <article class="product">
             <div class="product-info">
-                <h3><span class="streep">Commes des Garcons</span></h3>
+                <h3>
+                    <span class="streep">Commes des Garcons</span>
+                </h3>
 
                 <p>Comme Des Garcons Wallet</p>
 
@@ -72,12 +117,23 @@
             </div>
 
             <div class="button-product">
-                <Button><i class="fa-regular fa-bookmark"></i></Button>
-                <button><i class="fa-regular fa-heart"></i></button>
+                <button onclick="bookmark(this)">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 3H18V21L12 17L6 21Z"/>
+                    </svg>
+                </button>
+
+                <button onclick="like(this)">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20.8 4.6C18.8 2.6 15.5 2.6 13.5 4.6L12 6.1L10.5 4.6C8.5 2.6 5.2 2.6 3.2 4.6C1.2 6.6 1.2 9.9 3.2 11.9L12 21L20.8 11.9C22.8 9.9 22.8 6.6 20.8 4.6Z"/>
+                    </svg>
+                </button>
             </div>
         </article>
     </section>
 
+
+    <!-- LISTING DETAILS -->
 
     <section>
         <article class="zien">
@@ -105,16 +161,27 @@
     </section>
 
 
-    <h3><i class="fa-solid fa-shield"></i>Grailed Purchase Protection</h3>
-
-    <p>
-        We want you to feel safe buying and selling on Grailed.
-        Qualifying orders are covered by our Purchase Protection
-        in the rare case something goes wrong
-    </p>
-
+    <!-- GRAILED PURCHASE PROTECTION -->
 
     <section>
+        <h3>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 512 512"
+                 width="18"
+                 height="18"
+                 fill="currentColor">
+                <path d="M466.5 83.71l-192-80C269.6 1.67 261.3 0 256 0C250.7 0 242.5 1.67 237.6 3.702l-192 80C27.7 83.71 16 108.6 16 127.1c0 257.2 189.2 384 239.1 384c51.1 0 240-128.2 240-384C496 108.6 484.3 83.71 466.5 83.71z"/>
+            </svg>
+
+            Grailed Purchase Protection
+        </h3>
+
+        <p>
+            We want you to feel safe buying and selling on Grailed.
+            Qualifying orders are covered by our Purchase Protection
+            in the rare case something goes wrong
+        </p>
+
         <article class="zien">
             <details>
                 <summary>How you're protected</summary>
@@ -133,142 +200,266 @@
     </section>
 
 
+    <!-- LISTING DATUM -->
+
     <p>Posted 3 months ago Listing ID 8736562</p>
 
 
+    <!-- REPORT EN PRICE COMPARISON -->
+
     <section class="buttons">
-        <button class="report"><i class="fa-solid fa-triangle-exclamation"></i>REPORT LISTING</button>
-        <button class="report"><i class="fa-solid fa-dollar-sign"></i>PRICE COMPARISON</button>
+        <button class="report">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="currentColor">
+                <path d="M256 32c11.5 0 22.2 6.1 28 16l224 384c5.7 9.9 5.7 22.1 0 32s-16.3 16-28 16H32c-11.7 0-22.3-6.2-28-16s-5.7-22.1 0-32L228 48c5.8-9.9 16.5-16 28-16zm0 128c-13.3 0-24 10.7-24 24v112c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm0 224a32 32 0 1 0 0 64 32 32 0 0 0 0-64z"/>
+            </svg>
+
+            REPORT LISTING
+        </button>
+
+        <button class="report">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="currentColor">
+                <path d="M160 0c17.7 0 32 14.3 32 32v32.2c48.1 6.1 80 34.6 80 75.8 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-20.1-22.3-32-64-32-39.8 0-64 16-64 40 0 22.2 20.8 34.2 80 49 67.8 17 96 45.5 96 99 0 49.2-34.5 83.5-80 94v58c0 17.7-14.3 32-32 32s-32-14.3-32-32v-56.8c-55.2-5.5-88-36.1-88-81.2 0-13.3 10.7-24 24-24s24 10.7 24 24c0 23.1 23.3 36 64 36 42.8 0 64-15.5 64-40 0-21.4-19.2-33.4-80-48-66.8-16.7-96-45.2-96-100 0-47.7 34.1-81.4 80-92V32c0-17.7 14.3-32 32-32z"/>
+            </svg>
+
+            PRICE COMPARISON
+        </button>
     </section>
 
+
+    <!-- SIMILAR LISTINGS -->
 
     <section>
         <article class="zien">
             <H3>Similar Listings</H3>
-            <a href="">SEE ALL<i class="fa-solid fa-arrow-right-long"></i></a>
+
+            <a href="">
+                SEE ALL
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16" height="16" fill="currentColor">
+                    <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.7 224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h306.7l-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+                </svg>
+            </a>
         </article>
 
-        <div class="scroll-car">
-            <img src="images/wallet-1.webp" alt="Foto van gekleurde portomonee">
-            <img src="images/wallet-2.webp" alt="Foto zwarte portomonee">
-            <img src="images/wallet-3.webp" alt="Foto van oranje portomonee met groene patroon">
-            <img src="images/wallet-4.webp" alt="Foto van bruine portomonee met beige patroon">
-            <img src="images/wallet-5.webp" alt="Foto van zwarte portomonee">
-            <img src="images/wallet-6.webp" alt="Foto binnenkant zwarte portomonee">
-            <img src="images/wallet-7.webp" alt="Foto van Portomonee met luipaard print">
-            <img src="images/wallet-8.jpeg" alt="">
-            <img src="images/wallet-9.jpeg" alt="">
-            <img src="images/wallet-10.jpeg" alt="">
-            <img src="images/wallet-11.jpeg" alt="">
-            <img src="images/wallet-12.jpeg" alt="">
-            <img src="images/wallet-13.jpeg" alt="">
-            <img src="images/wallet-14.jpeg" alt="">
+        <ul class="scroll-car">
+            <li>
+                <img src="images/wallet-1.webp" alt="Foto van gekleurde portomonee">
+            </li>
+
+            <li>
+                <img src="images/wallet-2.webp" alt="Foto zwarte portomonee">
+            </li>
+
+            <li>
+                <img src="images/wallet-3.webp" alt="Foto van oranje portomonee met groene patroon">
+            </li>
+
+            <li>
+                <img src="images/wallet-4.webp" alt="Foto van bruine portomonee met beige patroon">
+            </li>
+
+            <li>
+                <img src="images/wallet-5.webp" alt="Foto van zwarte portomonee">
+            </li>
+
+            <li>
+                <img src="images/wallet-6.webp" alt="Foto binnenkant zwarte portomonee">
+            </li>
+
+            <li>
+                <img src="images/wallet-7.webp" alt="Foto van Portomonee met luipaard print">
+            </li>
+
+            <li>
+                <img src="images/wallet-8.jpeg" alt="Foto van Rode portomonee">
+            </li>
+
+            <li>
+                <img src="images/wallet-9.jpeg" alt="foto van plaid portomonee">
+            </li>
+
+            <li>
+                <img src="images/wallet-10.jpeg" alt="foto van metallic patchwork portomonee">
+            </li>
+
+            <li>
+                <img src="images/wallet-11.jpeg" alt="foto van blauwe portomonee">
+            </li>
+
+            <li>
+                <img src="images/wallet-12.jpeg" alt="foto van zilver polka dot portomonee">
+            </li>
+
+            <li>
+                <img src="images/wallet-13.jpeg" alt="foto van zwarte portomonee met patroon">
+            </li>
+
+            <li>
+                <img src="images/wallet-14.jpeg" alt="foto van glanzende zwarte portomonee met polka dot ">
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- VERKOPER -->
+
+    <section class="verkoper">
+        <img src="images/iconnnnnn.png" alt="Ragzragzz" class="avatar">
+
+        <div class="info">
+            <h4>Ragzragzz</h4>
+
+            <div class="rij" id="reviews">
+                <svg onclick="spinStars()" viewBox="0 0 24 24">
+                    <path d="M12 2L15 9L22 9.5L16.5 14.5L18 22L12 18L6 22L7.5 14.5L2 9.5L9 9Z"/>
+                </svg>
+
+                <svg onclick="spinStars()" viewBox="0 0 24 24">
+                    <path d="M12 2L15 9L22 9.5L16.5 14.5L18 22L12 18L6 22L7.5 14.5L2 9.5L9 9Z"/>
+                </svg>
+
+                <svg onclick="spinStars()" viewBox="0 0 24 24">
+                    <path d="M12 2L15 9L22 9.5L16.5 14.5L18 22L12 18L6 22L7.5 14.5L2 9.5L9 9Z"/>
+                </svg>
+
+                <svg onclick="spinStars()" viewBox="0 0 24 24">
+                    <path d="M12 2L15 9L22 9.5L16.5 14.5L18 22L12 18L6 22L7.5 14.5L2 9.5L9 9Z"/>
+                </svg>
+
+                <svg onclick="spinStars()" viewBox="0 0 24 24">
+                    <path d="M12 2L15 9L22 9.5L16.5 14.5L18 22L12 18L6 22L7.5 14.5L2 9.5L9 9Z"/>
+                </svg>
+
+                <p>14 reviews</p>
+            </div>
+
+            <p>64 Transactions - <span class="streep">274 items for sale</span></p>
+
+            <p onclick="boltClick()" class="quick">
+                <svg id="bolt" viewBox="0 0 24 24">
+                    <path d="M13 2L4 14H11L10 22L20 9H13L13 2Z"/>
+                </svg>
+                Quick Responder
+            </p>
+
+            <div class="rij">
+                <button class="donker">FOLLOW</button>
+                <button onclick="showImage()">SEND A MESSAGE</button>
+            </div>
+
+            <img id="actie" src="images/hetry.webp" alt="Ragzragzz" class="avatar">
         </div>
     </section>
 
 
-    <section>
-        <h4>Ragzragzz</h4>
-
-        <i class="fa-solid fa-check"></i>
-        <p>Verified</p>
-
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-
-        <p>14 reviews</p>
-
-        <p>64 Transactions - <span class="streep">274 items for sale</span></p>
-
-        <p><i class="fa-solid fa-bolt"></i> Quick Responder</p>
-
-        <span class="donker"><button">FOLLOW</button> </span>
-        <Button>SEND A MESSAGE</Button>
-    </section>
-
+    <!-- SELL ONE LIKE THIS -->
 
     <section class="one">
         <ul>
             <li>
-                <i class="fa-solid fa-dollar-sign"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="currentColor">
+                    <path d="M160 0c17.7 0 32 14.3 32 32v32c48 6 80 35 80 76 0 13-11 24-24 24s-24-11-24-24c0-20-22-32-64-32-40 0-64 16-64 40 0 22 21 34 80 49 68 17 96 46 96 99 0 49-35 84-80 94v58c0 18-14 32-32 32s-32-14-32-32v-57c-55-5-88-36-88-81 0-13 11-24 24-24s24 11 24 24c0 23 23 36 64 36 43 0 64-16 64-40 0-21-19-33-80-48-67-17-96-45-96-100 0-48 34-81 80-92V32c0-18 14-32 32-32z"/>
+                </svg>
 
                 <article>
                     <p>Sell one like this </p>
-                    <button class="donker"> List now </button>
+					<button class="donker">LIST NOW</button>
                 </article>
             </li>
         </ul>
     </section>
 
 
-    <section>
-        <h3>Seller Feedback</h3>
-        <a href="">SEE ALL</a>
-
-        <p>NOVEMBER 25TH, 2025</p>
-
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-regular fa-star"></i>
-        <i class="fa-regular fa-star"></i>
-
-        <p>Perfect</p>
-        <p>Prada</p>
-        <p>Prada Sport Crossbody Bag</p>
-
-        <img src="images/prada-tas.webp" alt="Foto van Prada schoudertas">
-    </section>
-
+    <!-- MORE FROM THIS SELLER -->
 
     <section>
         <h3>More from this Seller</h3>
         <a href="">SEE ALL</a>
 
-        <div class="scroll-car">
-            <img src="images/more-1.jpeg" alt="Foto van een grijs shirt met lange mouwen">
-            <img src="images/more-2.jpeg" alt="foto zwarte riem">
-            <img src="images/more-3.jpeg" alt="foto van zwarte hoge sneakers">
-            <img src="images/more-4.jpeg" alt="Foto van een zilvere ring">
-            <img src="images/more-5.jpeg" alt="Foto van een blauw shirt met een hond erop">
-            <img src="images/more-6.jpeg" alt="">
-            <img src="images/more-7.jpeg" alt="">
-            <img src="images/more-8.jpeg" alt="">
-            <img src="images/more-9.jpeg" alt="">
-            <img src="images/more-10.jpeg" alt="">
-            <img src="images/more-11.jpeg" alt="">
-            <img src="images/more-12.jpeg" alt="">
-            <img src="images/more-13.jpeg" alt="">
-            <img src="images/more-14.jpeg" alt="">
-        </div>
-    </section>
+        <ul class="scroll-car">
+            <li>
+                <img src="images/more-1.jpeg" alt="Foto van een grijs shirt met lange mouwen">
+            </li>
 
+            <li>
+                <img src="images/more-2.jpeg" alt="foto zwarte riem">
+            </li>
 
-    <h3>Related Searches</h3>
+            <li>
+                <img src="images/more-3.jpeg" alt="foto van zwarte hoge sneakers">
+            </li>
 
-    <section class="grid">
-        <ul>
-            <li><a href="#">OVERSIZED LOGO</a></li>
-            <li><a href="#">WASHED OVERSIZED</a></li>
-            <li><a href="#">OVERSIZED</a></li>
-            <li><a href="#">LSD OVERSIZED</a></li>
-            <li><a href="#">OVERSIZED WOOL</a></li>
-            <li><a href="#">OVERSIZED OVERALLS</a></li>
-            <li><a href="#">OVERSIZED T</a></li>
-            <li><a href="#">OVERSIZED WIDE LEG</a></li>
-            <li><a href="#">OVERSIZED CARGO</a></li>
-            <li><a href="#">WHITE OVERSIZED</a></li>
-            <li><a href="#">OVERSIZED LARRY</a></li>
-            <li><a href="#">OVERSIZED LINNEN</a></li>
-            <li><a href="#">OVERSIZED LACES</a></li>
-            <li><a href="#">OVERSIZED LONG COAT</a></li>
-            <li><a href="#">HM OVERSIZED</a></li>
-            <li><a href="#">RED OVERSIZED</a></li>
+            <li>
+                <img src="images/more-4.jpeg" alt="Foto van een zilvere ring">
+            </li>
+
+            <li>
+                <img src="images/more-5.jpeg" alt="Foto van een blauw shirt met een hond erop">
+            </li>
+
+            <li>
+                <img src="images/more-6.jpeg" alt="foto van zwarte tanktop met print">
+            </li>
+
+            <li>
+                <img src="images/more-7.jpeg" alt="grijze chrome hearts hoodie">
+            </li>
+
+            <li>
+                <img src="images/more-8.jpeg" alt="zwarte long sleeve">
+            </li>
+
+            <li>
+                <img src="images/more-9.jpeg" alt="blouse met print">
+            </li>
+
+            <li>
+                <img src="images/more-10.jpeg" alt="zwarte glans puffer jas">
+            </li>
+
+            <li>
+                <img src="images/more-11.jpeg" alt="oranje glans puffer jas">
+            </li>
+
+            <li>
+                <img src="images/more-12.jpeg" alt="zwarte track broek met witte streep langs zijkant">
+            </li>
+
+            <li>
+                <img src="images/more-13.jpeg" alt="zwarte korte broek">
+            </li>
+
+            <li>
+                <img src="images/more-14.jpeg" alt="denim korte broek met scheuren">
+            </li>
         </ul>
     </section>
 
+
+    <!-- RELATED SEARCHES -->
+
+    <h3>Related Searches</h3>
+
+    <ul class="related">
+        <li><a href="#">OVERSIZED LOGO</a></li>
+        <li><a href="#">WASHED OVERSIZED</a></li>
+        <li><a href="#">OVERSIZED</a></li>
+        <li><a href="#">LSD OVERSIZED</a></li>
+        <li><a href="#">OVERSIZED WOOL</a></li>
+        <li><a href="#">OVERSIZED OVERALLS</a></li>
+        <li><a href="#">OVERSIZED T</a></li>
+        <li><a href="#">OVERSIZED WIDE LEG</a></li>
+        <li><a href="#">OVERSIZED CARGO</a></li>
+        <li><a href="#">WHITE OVERSIZED</a></li>
+        <li><a href="#">OVERSIZED LARRY</a></li>
+        <li><a href="#">OVERSIZED LINNEN</a></li>
+        <li><a href="#">OVERSIZED LACES</a></li>
+        <li><a href="#">OVERSIZED LONG COAT</a></li>
+        <li><a href="#">HM OVERSIZED</a></li>
+        <li><a href="#">RED OVERSIZED</a></li>
+    </ul>
+
+
+    <!-- RECENTLY VIEWED -->
 
     <section>
         <h3>Recently Viewed</h3>
@@ -279,47 +470,51 @@
             <img src="images/home-p3.webp" alt="foto van zwarte hoge sneakers">
             <img src="images/home-p4.webp" alt="Foto van een zilvere ring">
             <img src="images/home-p5.webp" alt="Foto van een blauw shirt met een hond erop">
-            <img src="images/home-p6.jpeg" alt="">
-            <img src="images/home-p7.jpeg" alt="">
-            <img src="images/home-p8.jpeg" alt="">
-            <img src="images/home-p9.jpeg" alt="">
-            <img src="images/home-p10.jpeg" alt="">
-            <img src="images/home-p11.jpeg" alt="">
-            <img src="images/home-p12.jpeg" alt="">
-            <img src="images/home-p13.jpeg" alt="">
-            <img src="images/home-p14.jpeg" alt="">
+            <img src="images/home-p6.jpeg" alt="rode riem met neon gele binnenkant">
+            <img src="images/home-p7.jpeg" alt="zwarte portomonee met tassels">
+            <img src="images/home-p8.jpeg" alt="asic sneakers">
+            <img src="images/home-p9.jpeg" alt="zwarte portomonee">
+            <img src="images/home-p10.jpeg" alt="tommy cash en maison margiela brood slippers">
+            <img src="images/home-p11.jpeg" alt="zwarte t-shirt met print">
+            <img src="images/home-p12.jpeg" alt="balenciaga blouse ">
+            <img src="images/home-p13.jpeg" alt="Tommy cash en maison margiela noodles">
+            <img src="images/home-p14.jpeg" alt="zwart tasje">
         </section>
     </section>
 
 
+    <!-- RELATED ARTICLES -->
+
     <h3>Related Commes des Garcon Articles</h3>
 
-    <article class="car-art">
-        <div class="art">
+    <ul class="car-art">
+        <li class="art">
             <img src="images/nike.jpeg" alt="Foto met Nike schoenen">
             <p>Surfaced</p>
             <h3>Featured: Comme Des Carcons Homme Plus x Nike</h3>
-        </div>
+        </li>
 
-        <div class="art">
+        <li class="art">
             <img src="images/cdg.jpeg" alt="Foto van de Creative director van comme des garcon">
             <p>Master Class</p>
             <h3>Master Class: Commes des Garcons</h3>
-        </div>
+        </li>
 
-        <div class="art">
+        <li class="art">
             <img src="images/play.jpeg" alt="Foto van schoenen van de samenwerking met comme des garcon en converse">
             <p>Surfaced</p>
             <h3>Classic or Trash; PLAY Comme des garcon x Converse</h3>
-        </div>
+        </li>
 
-        <div class="art">
+        <li class="art">
             <img src="images/sneaker.jpeg" alt="Foto van normale witte sneakers">
             <p>surfaced</p>
-            <h3>Our Favorite White Sneaker Right Now </h3>
-        </div>
-    </article>
+            <h3>Our Favorite White Sneaker Right Now</h3>
+        </li>
+    </ul>
 
+
+    <!-- FOOTER -->
 
     <footer>
         <nav>
@@ -332,10 +527,10 @@
         </nav>
 
         <ul class="iconen">
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-youtube"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><img src="images/Instagram.png" alt="instagram icoon"></li>
+            <li><img src="images/facebook.png" alt="facebook icoon"></li>
+            <li><img src="images/yt.webp" alt="youtube icoon"></li>
+            <li><img src="images/linked.png" alt="linkedin icoon"></li>
             <li>Grailed 2025</li>
         </ul>
     </footer>
