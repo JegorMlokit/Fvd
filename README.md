@@ -329,6 +329,24 @@ Geen px
   2. https://codepen.io/shooft/pen/QwjQGZe
   3. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-decoration
   4. https://www.youtube.com/watch?v=McPdzhLRzCg&t=167s
+
+
+mijn bronnen lijst:
+
+Chat:
+https://chatgpt.com/share/6b06cd53-e048-83eb-9e02-7507317ab83d
+
+
+
+
+Yt
+https://www.youtube.com/watch?v=ndJCQJn1e6g
+https://www.youtube.com/watch?v=aNDqzlAKmZc&t=10s
+
+
+ik heb ook de opdrachten van de lessen gebruikt voor sommige code
+
+
      
 
 </details>
